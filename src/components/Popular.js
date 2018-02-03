@@ -33,7 +33,7 @@ class Popular extends Component {
     return (
       <div className="Popular">
         <p>
-          Showing repos for & nbsp;
+          Showing repos for 
           <SelectLanguage
             selectedLanguage={this.state.selectedLanguage}
             selectLanguage={this.selectLanguage}
