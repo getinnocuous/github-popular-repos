@@ -21,7 +21,10 @@ class Popular extends Component {
       },
       () => {
         api.fetchPopularRepos(this.state.selectedLanguage).then(repos => {
-          this.setState({ repos: repos, loaded: true });
+          this.setState({
+            repos: repos,
+            loaded: true
+          });
         });
       }
     );
@@ -30,7 +33,7 @@ class Popular extends Component {
     return (
       <div className="Popular">
         <p>
-          Showing repos for&nbsp;
+          Showing repos for & nbsp;
           <SelectLanguage
             selectedLanguage={this.state.selectedLanguage}
             selectLanguage={this.selectLanguage}
@@ -56,15 +59,15 @@ class Popular extends Component {
           )}
         </div>
         <p className="disclaimer">
-          Inpsired from a{' '}
+          Inpsiration from a&nbsp;
           <a
             target="_blank"
             rel="noopener noreferrer"
             href="https://tylermcginnis.com/"
           >
             Tyler Mcginnis
-          </a>{' '}
-          tutorial.
+          </a>
+          &nbsp;tutorial.
         </p>
       </div>
     );
