@@ -66,8 +66,7 @@ class Popular extends Component {
             href="https://tylermcginnis.com/"
           >
             Tyler Mcginnis
-          </a>
-          &nbsp;tutorial.
+          </a> tutorial.
         </p>
       </div>
     );
